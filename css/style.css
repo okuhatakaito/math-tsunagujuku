@@ -1,0 +1,256 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.7;
+  color: #222;
+}
+
+a {
+  color: #fff;
+  background: #111;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* ===== Layout ===== */
+header {
+  padding: 30px 2px;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== Hero ===== */
+#hero {
+  text-align: center;
+}
+
+#hero p {
+  margin-bottom: 5px;
+}
+
+/* ===== Lists ===== */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ===== CTA ===== */
+#cta {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#cta a {
+  margin-top: 20px;
+}
+
+
+.lead {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+/* ===== index.htmlの特徴セクション ===== */
+
+.features-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.features-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.feature-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.feature-item {
+  padding: 28px 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.feature-item h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.features-cta {
+  text-align: center;
+}
+
+.feature-button {
+  margin-top: auto;   /* ← これが超重要 */
+  text-align: center; /* 横中央 */
+  padding: 10px 16px;
+  border: 1px solid #222;
+  color: #222;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.feature-button:hover {
+  background: #222;
+  color: #fff;
+}
+
+
+/* ===== スマホ対応 ===== */
+
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.trial {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.trial-section {
+  margin-bottom: 50px;
+}
+
+.trial-section ul {
+  padding-left: 20px;
+}
+
+.cta {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+}
+
+.price {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.price-section {
+  margin-bottom: 60px;
+}
+
+.price-amount {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.price-section ul {
+  padding-left: 20px;
+}
+
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 20px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column; /* ← 上下に並べる */
+  line-height: 1.2;
+}
+
+.brand-sub {
+  font-size: 11px;
+  color: #666;
+}
+
+.brand-main {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header-nav a {
+  margin-left: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* ロゴ */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* ナビ */
+.nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
