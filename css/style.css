@@ -13,7 +13,7 @@ body {
 
 a {
   color: #fff;
-  background: #111;
+  background: #f5b642;
   text-decoration: none;
   padding: 12px 20px;
   display: inline-block;
@@ -25,7 +25,7 @@ a:hover {
 
 /* ===== Layout ===== */
 header {
-  padding: 30px 2px;
+  padding: 20px 2px;
   text-align: center;
 }
 
@@ -53,10 +53,11 @@ footer {
 
 /* ===== Lists ===== */
 ul {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 li {
+  list-style: none;
   margin-bottom: 8px;
 }
 
@@ -64,6 +65,7 @@ li {
 #cta {
   background: #f5f5f5;
   text-align: center;
+  margin-top: 30px;
 }
 
 #cta a {
@@ -74,6 +76,7 @@ li {
 .lead {
   font-size: 3rem;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* ===== index.htmlの特徴セクション ===== */
@@ -122,14 +125,16 @@ li {
 
 .features-cta {
   text-align: center;
+  margin-top: 30px;
 }
 
 .feature-button {
   margin-top: auto;   /* ← これが超重要 */
   text-align: center; /* 横中央 */
   padding: 10px 16px;
+  margin-top: 30px;
   border: 1px solid #222;
-  color: #222;
+  color: #f5bc42;
   text-decoration: none;
   font-size: 14px;
 }
@@ -177,18 +182,22 @@ li {
 }
 
 .price {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 0 20px;
+  text-align: left;
 }
 
 .price-section {
-  margin-bottom: 60px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 1px;
 }
 
 .price-amount {
   font-size: 24px;
   margin: 20px 0;
+  border-left: 5px solid #eb7f0c;
+  padding-left: 10px;
 }
 
 .price-section ul {
@@ -238,7 +247,9 @@ li {
   margin-left: 16px;
   font-size: 14px;
   text-decoration: none;
-  color: #333;
+  background-color: #fff;
+  color: black;
+  border-bottom: 2px solid #eb7f0c;
 }
 
 /* ロゴ */
@@ -251,6 +262,58 @@ li {
 .nav a {
   margin-left: 16px;
   text-decoration: none;
-  color: #333;
+  color: #424bf5;
   font-size: 14px;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.about-heading {
+  position: relative;
+  padding: 0.5em;
+  background: #fbd9b5;
+  color: black;
+  font-size: 20px;
+}
+
+.about-heading::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
+
+.title {
+  text-align: center;
+}
+
+
+#index-class{
+    position: relative;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+    text-align: center;
+}
+#index-class:after{
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+#index-class p {
+    margin: 0; 
+    padding: 0;
 }
