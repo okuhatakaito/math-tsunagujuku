@@ -79,6 +79,14 @@ li {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+
+  .lead {
+    font-size: 1.6rem;
+  }
+
+}
+
 /* ===== index.htmlの特徴セクション ===== */
 
 .features-section {
@@ -148,7 +156,7 @@ li {
 /* ===== スマホ対応 ===== */
 
 @media (max-width: 768px) {
-  .features {
+  .feature-index {
     grid-template-columns: 1fr;
   }
 }
@@ -225,6 +233,24 @@ li {
   display: flex;
   align-items: center;
   gap: 6px; 
+}
+
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-nav {
+    margin-top: 10px;
+  }
+
+  .header-nav a {
+    margin: 6px;
+    font-size: 13px;
+  }
+
 }
 
 .brand-text {
